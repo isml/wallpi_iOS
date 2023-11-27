@@ -12,7 +12,7 @@ class ApiServices{
     public func fetchDataWithPage( completion:@escaping (_ resultData:[Data], _ resultWallpaperList:[Photo])->Void, pageId:Int,category:String){
         var dataList:[Data] = []
         var wallpaperList:[Photo] = []
-              let token = "563492ad6f917000010000011c2395465707473e8b0fd3eb321e8d35"
+              let token = "563492ad6f917000010000011c2395465707473e8b0fd3eb321e8d35" // your API Token
         
         var urlString = "https://api.pexels.com/v1/curated?page=\(pageId)&per_page=8"
       if category != "" {
